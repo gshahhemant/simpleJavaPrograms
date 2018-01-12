@@ -1,6 +1,7 @@
 
 public class Visa {
 
+	// find nearest  pair  Integer array which addtion is nearest  to given N number. 
 	public void findNearNumber(Integer array[], Integer num) {
 		int tempDiff = 0;
 		int mindiff = Integer.MAX_VALUE;

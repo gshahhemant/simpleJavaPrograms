@@ -1,5 +1,9 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 class UserKey{
 	
@@ -65,6 +69,43 @@ public class MapTest {
 		for (UserKey key :map.keySet()) {
 			System.out.println(key.toString()+":"+map.get(key));
 		}
+		
+		
+		
+		 Map  <Integer,String>testMap= new HashMap();
+		 
+		 testMap.put(100, "hemant");
+		 testMap.put(50, "namrata");
+		 testMap.put(10, "aarna");
+		 testMap.put(20, "meet");
+		 testMap.put(30, "deep");
+		 
+		 System.out.println("\n\n\n\nBefore sorting");
+		 
+		 for (Integer key :testMap.keySet()) {
+				System.out.println(key.toString()+":"+testMap.get(key));
+			}
+		 
+		
+		 List<Integer> lst = new ArrayList(testMap.keySet());
+		 
+			 
+		 Collections.sort(lst);
+		 
+		 System.out.println("list==>"+lst);
+		 
+		 System.out.println("\n\n\nAfter sorting");
+		 
+		
+		
+		 
+		 for(Integer lsta: lst ) {
+			 System.out.println(lsta+":"+testMap.get(lsta));
+			 
+		 }
+		 
+		 
+		 
 		
 	}
 
